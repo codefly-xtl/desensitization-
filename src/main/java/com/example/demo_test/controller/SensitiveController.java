@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 @Slf4j
-public class TestController {
+public class SensitiveController {
     @RequestMapping("/test01")
-    public String test() {
-        log.debug("xtl正在测试");
+    public String test(String content) {
+
         return "test";
     }
 }
